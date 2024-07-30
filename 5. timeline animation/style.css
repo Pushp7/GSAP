@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightcyan; */
+    /* background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png"); */
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/10/11/09/field-1728099_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+}
+
+#main #nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+#main #nav h2 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#main #nav h2::selection {
+    background-color: transparent;
+}
+
+#main #nav i {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#menu {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: -35%;
+    background-color: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(10px);
+    padding: 150px 50px;
+}
+
+#menu h4 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#menu h4::selection {
+    background-color: transparent;
+}
+
+#menu i {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 5px 7px;
+}
