@@ -1,0 +1,250 @@
+@font-face {
+    font-family: chicha;
+    src: url(./3856NeueMachina.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section1 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: bisque; */
+    padding: 0 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    /* background-color: blue; */
+}
+
+nav h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav h1 i {
+    display: inline-block;
+    rotate: 45deg;
+    font-size: 32px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navigation ul li {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navigation button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.center {
+    height: 80%;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    /* background-color: red;   */
+}
+
+.center .center-left {
+    height: 100%;
+    width: 40%;
+    padding: 40px 0;
+    /* background-color: lightgreen; */
+}
+
+.center .center-left h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    font-family: chicha;
+}
+
+.center .center-left p {
+    font-size: 23px;
+    line-height: 1.1;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.center .center-left button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.center .center-right {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    /* background-color: lightblue; */
+}
+
+.center .center-right img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.bottom img{
+    height: 35px;
+    width: 100px;
+}
+
+.section2{
+    padding: 0 100px;
+    width: 100%;
+    height: 100vh;
+}
+
+.section2 .services{
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+.services h3{
+    background-color: #00C49A;
+    font-size: 2vw;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-family: chicha;
+}
+
+.services p{
+    width: 40%;
+    line-height: 1.1;
+}
+
+.section2 .elem-container{
+    height: 85%;
+    width: 100%;
+    margin-top: 25px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: none;
+    /* gap: 50px 0; */
+}
+
+.elem-container .elem{
+    /* background-color: #00C49A; */
+    height: 45%;
+    width: 48%;
+    border-radius: 25px;
+    box-shadow: 0px 8px 0px black;
+    padding: 40px;
+    display: flex;
+    border: 2px solid black;
+}
+
+.elem:nth-child(3n+1) {
+    background-color: transparent;
+}
+
+.elem:nth-child(2), .elem:nth-child(3) {
+    background-color: black;
+}
+
+.elem:nth-child(2) h2, .elem:nth-child(3) h2 {
+    background-color: white;
+    width: 70%;
+}
+
+.elem:nth-child(2) i, .elem:nth-child(3) i {
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.elem .elem-part1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.elem .elem-part1 p{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 7px;  
+}
+
+.elem:nth-child(3n+1) i{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.elem:nth-child(3n+1) h2{
+    width: 70%;
+    background-color: #00C49A;
+}
+
+.elem .elem-part2{
+    width: 50%;
+    height: 100%;
+}
+
+.elem .elem-part2 img{
+    width: 100%;
+}
