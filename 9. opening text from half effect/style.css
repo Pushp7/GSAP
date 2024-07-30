@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Grotesk;
+    src: url(./FoundersGroteskCondensed-Bold.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #9a4e4e;
+    position: relative;
+}
+
+#page2 .top{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffffbe;
+    position: absolute;
+    top: 0%;
+    z-index: 9;
+    overflow: hidden;
+}
+
+#page2 .bottom{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffffbe;
+    position: absolute;
+    bottom: 0%;
+    /* z-index: 111; */
+    overflow: hidden;
+}
+
+#page2 h1{
+    font-size: 25vw;
+    font-family: Grotesk;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#page2 .top h1{
+    top: 95%;
+}
+
+#page2 .bottom h1{
+    top: -5%;
+}
+
+#page2 .center{
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page2 .center p{
+    color: #fff;
+}
